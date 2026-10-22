@@ -12,11 +12,11 @@ h = base64.b64encode(hashlib.sha256(scripts[0].encode('utf-8')).digest()).decode
 csp = "; ".join([
     "default-src 'self'",
     f"script-src 'self' 'sha256-{h}'",
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-    "font-src https://fonts.gstatic.com",
+    "style-src 'self' 'unsafe-inline'",
+    "font-src 'self'",
     "img-src 'self' data: blob:",
     "media-src 'self' data: blob:",
-    "connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com",
+    "connect-src 'self'",
     "manifest-src 'self'",
     "worker-src 'self'",
     "frame-ancestors 'none'",
@@ -41,6 +41,9 @@ csp = "; ".join([
 
 /sw.js
   Cache-Control: no-cache
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
 
 /manifest.webmanifest
   Content-Type: application/manifest+json

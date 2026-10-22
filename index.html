@@ -20,10 +20,26 @@
 <meta property="og:image" content="og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Aroha","alternateName":"Aroha: a companion for mental wellness","applicationCategory":"HealthApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","description":"A self-care web app for young adults living with generalised anxiety: symptom and mood logging, heart rate check, SOS grounding and breathing, a private memory safe box, to-dos with task breakdown, and short expert reads. Not a medical service."}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
+/* Self-hosted fonts (SIL OFL / Apache 2.0, see fonts/README.md): no third-party request, works offline. */
+@font-face{font-family:'Caveat';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/caveat-normal-latin-ext-32f761.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/caveat-normal-latin-706a1c.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/caveat-normal-latin-ext-32f761.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/caveat-normal-latin-706a1c.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Crimson Text';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/crimson-text-italic-latin-ext-a0f6dd.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Crimson Text';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/crimson-text-italic-latin-1ac6ef.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Crimson Text';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/crimson-text-normal-latin-ext-e7ca5f.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Crimson Text';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/crimson-text-normal-latin-1f852a.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Crimson Text';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/crimson-text-normal-latin-ext-c63ee1.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Crimson Text';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/crimson-text-normal-latin-38dc48.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/roboto-normal-latin-ext-f0106b.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/roboto-normal-latin-0f7fcd.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/roboto-normal-latin-ext-f0106b.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/roboto-normal-latin-0f7fcd.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/roboto-normal-latin-ext-f0106b.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/roboto-normal-latin-0f7fcd.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/roboto-normal-latin-ext-f0106b.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/roboto-normal-latin-0f7fcd.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 :root{
   --bg:#FFFAFA;--surface:#FFFFFF;--sand:#F7E9DE;--beach:#F4E2DA;--blush:#F2DFDF;--glow:#FFD8D8;
   --cosmos:#59445B;--nav:#81687F;--poppy:#C25C9A;--poppy-soft:#CF89AE;--wine:#8C3D4C;--brown:#4F3422;
@@ -242,7 +258,7 @@ svg{display:block}
 .fc-meta{position:absolute;left:28px;bottom:16px;font:400 12px/20px Roboto,sans-serif;z-index:1;display:grid;gap:2px}
 .fc-meta span{display:flex;align-items:center;gap:6px}
 .fc-meta .ic{width:12px;height:12px}
-.fc-kind{position:absolute;right:14px;top:12px;z-index:2;font-size:11px;background:rgba(255,255,255,.25);padding:3px 8px;border-radius:20px}
+.fc-kind{position:absolute;right:14px;top:12px;z-index:2;font-size:11px;background:rgba(30,20,28,.38);padding:3px 8px;border-radius:20px}
 .fc-art{position:absolute;right:-6px;bottom:0;width:58%;max-width:200px;height:100%;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 40%);mask-image:linear-gradient(90deg,transparent 0%,#000 40%)}
 .fc-art svg{width:100%;height:100%}
 .empty{padding:26px 20px;text-align:center;color:var(--muted);font-size:15px;border:1px dashed var(--line);border-radius:20px;max-width:340px;margin:0 auto}
@@ -556,6 +572,8 @@ textarea.notes::placeholder{color:var(--muted)}
   .sheet.in{transform:translateY(-50%);opacity:1}
   #toast{bottom:30px}
 }
+/* Tablet: keep the phone layout, centred at a comfortable width */
+@media (min-width:600px) and (max-width:959px){.main{max-width:640px}}
 /* v0.2 additions */
 .skip-link{position:absolute;left:12px;top:-80px;z-index:100;background:var(--cosmos);color:var(--on-accent);padding:10px 16px;border-radius:20px;text-decoration:none;transition:top .2s}
 .skip-link:focus{top:calc(10px + env(safe-area-inset-top,0px))}
@@ -754,17 +772,20 @@ function helpline(){const k=HELPLINES[S.region]?S.region:detectRegion();return O
 function crisisLinks(cls){const h=helpline();return (h.num?'<a class="'+cls+'" href="tel:'+h.num+'"><span class="so-i">'+I.phone+'</span><span><b>Talk to someone now</b><span>'+esc(h.name)+', '+esc(h.disp||h.num)+'. '+esc(h.note)+'</span></span></a>':'<a class="'+cls+'" href="https://findahelpline.com" target="_blank" rel="noopener"><span class="so-i">'+I.phone+'</span><span><b>Find a helpline near you</b><span>findahelpline.com lists free, confidential lines by country</span></span></a>')+
  '<a class="'+cls+'" href="'+(h.emerg?'tel:'+h.emerg:'https://findahelpline.com')+'"'+(h.emerg?'':' target="_blank" rel="noopener"')+'><span class="so-i">'+I.phone+'</span><span><b>In danger right now? '+(h.emerg?'Call '+h.emerg:'Call your local emergency number')+'</b><span>'+(h.emerg?'Emergency number in '+esc(h.label):'Police, ambulance or fire')+'</span></span></a>'}
 const MOOD_COL={happy:'#F2B4C9',sad:'#81687F',neutral:'#F4E2DA',gloomy:'#59445B',excited:'#C25C9A'};
+/* Crisis language in free text opens helplines. Chats and notes are never read by a person in this prototype. */
+const CRISIS=/\b(suicid\w*|kill(ing)? my ?self|end (it all|my life)|want(ed)? to die|don[\u2019']?t want to (live|be here)|self[- ]?harm\w*|hurt(ing)? my ?self|no reason to live)\b/i;
+function crisisCheck(t){if(!CRISIS.test(t))return false;openSheet('<h2>You don\u2019t have to carry this alone</h2><p class="lead">What you wrote sounds really hard. Nobody reads this here, so if you are thinking about hurting yourself, please talk to someone now.</p>'+crisisLinks('sopt danger')+'<button class="sopt" data-act="breathe"><span class="so-i">'+I.wind+'</span><span><b>Breathe with me first</b><span>In for 4, out for 6</span></span></button>');return true}
 function face(m){const base='<circle cx="12" cy="12" r="9.5"/>';const eyes='<path d="M9 9.5v.5M15 9.5v.5" stroke-width="2.2"/>';const mouths={happy:'<path d="M8 14c1 2 2.5 3 4 3s3-1 4-3"/>',sad:'<path d="M8.5 16.5c1-1.5 2.2-2 3.5-2s2.5.5 3.5 2"/>',neutral:'<path d="M8.5 15h7"/>',gloomy:'<path d="M8.5 16.5c1-1.5 2.2-2 3.5-2s2.5.5 3.5 2M7.5 7.5l3 1.2M16.5 7.5l-3 1.2"/>',excited:'<path d="M7.5 13h9c-.5 3-2.3 4.5-4.5 4.5S8 16 7.5 13z"/>'};return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+base+eyes+mouths[m]+'</svg>'}
 
 /* ---------- data layer ----------
    All persistence goes through db + normalise(). To move to a server (Supabase etc.),
    swap db.read/db.write for API calls; views only ever touch S and save(). */
-const APP_VERSION='0.2.0',SCHEMA=2,KEY='aroha.v1';
+const APP_VERSION='0.3.0',SCHEMA=2,KEY='aroha.v1';
 function task(t){return {id:uid(),t:t,done:false,steps:[]}}
 function fresh(){const t=dkey(),tm=dkey(addDays(new Date(),1));const tasks={};
  tasks[t]=[task('Finish and upload assignment'),task('Help mom run specific errands'),task('Pick up from airport'),task('Dinner with Mihika')];
  tasks[tm]=[task('Call Sarth back'),task('Evening walk, 20 minutes')];
- return {v:SCHEMA,loggedIn:false,onboarded:false,consentAt:0,region:'',installDismissed:false,lock:null,user:{name:'',email:''},profile:{goals:[],gender:'',age:'',height:'',weight:'',help:'',meds:''},tasks:tasks,logs:{},hr:[],temp:[],tempUnit:'F',
+ return {v:SCHEMA,loggedIn:false,auth:null,onboarded:false,consentAt:0,region:'',installDismissed:false,lock:null,user:{name:'',email:''},profile:{goals:[],gender:'',age:'',height:'',weight:'',help:'',meds:''},tasks:tasks,logs:{},hr:[],temp:[],tempUnit:'F',
  contacts:[{id:uid(),name:'Ankit Y',phone:'',status:''},{id:uid(),name:'Sarth P',phone:'',status:''}],
  photos:[{id:'s1',kind:'art',art:'wing',title:"Manali 24'"},{id:'s2',kind:'art',art:'mountain',title:'Hampta pass'},{id:'s3',kind:'art',art:'valley',title:'Old Manali'},{id:'s4',kind:'art',art:'road',title:'Ride to Solang'}],
  favs:[],recs:[{id:'r1',title:'Manali trip monologue',dur:240,sample:1,art:'mountain'},{id:'r2',title:"Sarth's car note",dur:240,sample:1,art:'road'},{id:'r3',title:'Ranting sessions',dur:230,sample:1,art:'valley'},{id:'r4',title:"Mihika's voice note",dur:240,sample:1,art:'wing'},{id:'r5',title:"Mihika's voice note 2",dur:180,sample:1,art:'mountain'}],
@@ -773,7 +794,7 @@ function fresh(){const t=dkey(),tm=dkey(addDays(new Date(),1));const tasks={};
 const db={
  read(){const r=localStorage.getItem(KEY);return r?JSON.parse(r):null},
  write(d){localStorage.setItem(KEY,JSON.stringify(d))},
- clear(){try{localStorage.removeItem(KEY)}catch(e){}}
+ clear(){try{localStorage.removeItem(KEY);localStorage.removeItem(KEY+'.intro')}catch(e){}}
 };
 /* Trust boundary: stored and imported data is re-validated so nothing unexpected reaches innerHTML. */
 function normalise(d){
@@ -781,11 +802,12 @@ function normalise(d){
  const str=(v,n)=>typeof v==='string'?v.slice(0,n||500):'',arr=v=>Array.isArray(v)?v:[],obj=v=>v&&typeof v==='object'&&!Array.isArray(v)?v:{};
  const isData=(v,k)=>typeof v==='string'&&v.indexOf('data:'+k+'/')===0,isDay=k=>/^\d{4}-\d{2}-\d{2}$/.test(k);
  const ids=v=>arr(v).filter(x=>typeof x==='string').map(x=>x.slice(0,20));
- const moods=MOODS.map(m=>m[0]),sleeps=SLEEP.map(x=>x[0]),u=obj(d.user),pr=obj(d.profile),lk=obj(d.lock);
+ const moods=MOODS.map(m=>m[0]),sleeps=SLEEP.map(x=>x[0]),u=obj(d.user),pr=obj(d.profile),lk=obj(d.lock),au=obj(d.auth);
  const dayMap=(src,ok)=>{const o={};Object.keys(obj(src)).forEach(k=>{if(isDay(k)&&ok(src[k]))o[k]=src[k]});return o};
  const o={v:SCHEMA,loggedIn:!!d.loggedIn,onboarded:!!d.onboarded,consentAt:+d.consentAt||0,
   region:HELPLINES[d.region]?d.region:'',installDismissed:!!d.installDismissed,theme:d.theme==='light'||d.theme==='dark'?d.theme:'',tempUnit:d.tempUnit==='C'?'C':'F',
   lock:/^[0-9a-f]{32}$/.test(lk.salt)&&/^[0-9a-f]{64}$/.test(lk.hash)?{salt:lk.salt,hash:lk.hash}:null,
+  auth:/^[0-9a-f]{32}$/.test(au.salt)&&/^[0-9a-f]{64}$/.test(au.hash)?{salt:au.salt,hash:au.hash}:null,
   user:{name:str(u.name,60),email:str(u.email,120)},
   profile:{goals:arr(pr.goals).filter(g=>GOALS.includes(g)),gender:['male','female','skipped'].includes(pr.gender)?pr.gender:'',age:str(pr.age,4),height:str(pr.height,8),weight:str(pr.weight,4),help:str(pr.help,20),meds:str(pr.meds,20)},
   tasks:{},logs:{},comments:{},chats:{},
@@ -808,7 +830,7 @@ let S;
 try{const raw=db.read();S=raw?normalise(raw):fresh()}
 catch(e){console.warn('Stored data could not be read; starting fresh and keeping a copy.',e);try{localStorage.setItem(KEY+'.unreadable',localStorage.getItem(KEY)||'')}catch(x){}S=fresh()}
 carryOver(S);
-function save(){try{db.write(S)}catch(e){toast('Could not save on this device. Storage may be full.')}}
+function save(){try{db.write(S);return true}catch(e){toast('Could not save on this device. Storage may be full.');return false}}
 function applyTheme(){if(S.theme)document.documentElement.setAttribute('data-theme',S.theme);else document.documentElement.removeAttribute('data-theme')}
 applyTheme();
 const videos=[]; // shortcut: session-only object URLs; move to file storage when a backend exists
@@ -852,38 +874,51 @@ function collage(){return '<div class="collage"><div class="p p1">'+art('meditat
 V.splash=()=>'<div class="splash" data-act="skipSplash"><div class="sgrp">'+'<span class="sc"></span>'.repeat(4)+'</div><div class="splash-copy"><div class="word script">Aroha</div><p class="serif">A companion for mental wellness</p></div><button class="skip" data-act="skipSplash">Skip intro</button></div>';
 let splashDone=false;
 const DEEP=decodeURIComponent(location.hash.slice(1)),NO_DEEP=['splash','viewer','player','article','breakdown','chat','tracker'];
-function afterSplash(){if(splashDone)return;splashDone=true;const el=$('.splash');
- const next=()=>{depth=0;if(!(S.loggedIn&&S.onboarded))return go('welcome',{},true);const n=V[DEEP]&&!NO_DEEP.includes(DEEP)&&!PUBLIC.includes(DEEP)?DEEP:'home';go(n,{},true);if(DEEP==='sos'&&!locked)ACT.openSOS()};
- if(!el||reduce())return next();el.animate([{opacity:1},{opacity:0}],{duration:450,fill:'forwards'}).onfinish=next}
-A.splash=()=>{splashDone=false;const el=$('.splash'),cs=$$('.sc',el),grp=$('.sgrp',el),word=$('.word',el),tag=$('.splash-copy p',el);
- const D=[[0,-1],[1,0],[0,1],[-1,0]];
- if(reduce()||!el.animate){cs.forEach((c,i)=>{c.style.opacity=1;c.style.transform='translate('+D[i][0]*44+'px,'+D[i][1]*41+'px) scale(.5)'});grp.style.transform='translate(-102px,-62px) scale(.42)';word.style.clipPath='none';tag.style.opacity=1;const t=setTimeout(afterSplash,1300);cleanups.push(()=>clearTimeout(t));return}
- const e='cubic-bezier(.65,0,.35,1)';
+/* The full intro plays once per device; after that a shorter version. The SOS shortcut skips it entirely. */
+const introSeen=()=>{try{return !!localStorage.getItem(KEY+'.intro')}catch(e){return false}};
+function afterSplash(){if(splashDone)return;splashDone=true;const el=$('.splash');try{localStorage.setItem(KEY+'.intro','1')}catch(e){}
+ const next=()=>{depth=0;if(!(S.loggedIn&&S.onboarded))return go('welcome',{},true);const n=V[DEEP]&&!NO_DEEP.includes(DEEP)&&!PUBLIC.includes(DEEP)?DEEP:'home';go(n,{},true);if(DEEP==='sos')ACT.openSOS()}; // SOS works while locked, as on the lock screen
+ if(!el||reduce()||DEEP==='sos')return next();el.animate([{opacity:1},{opacity:0}],{duration:450,fill:'forwards'}).onfinish=next}
+A.splash=()=>{splashDone=false;if(DEEP==='sos')return void setTimeout(afterSplash);const el=$('.splash'),cs=$$('.sc',el),grp=$('.sgrp',el),word=$('.word',el),tag=$('.splash-copy p',el);
+ /* Circles sit at (dx*41, dy*44) before the group turns -90deg, which lands them on the logo's 44 x 41 spacing. */
+ const D=[[0,-1],[1,0],[0,1],[-1,0]],at=(dx,dy,k)=>'translate('+dx*41+'px,'+dy*44+'px) scale('+k+')';
+ if(reduce()||!el.animate){cs.forEach((c,i)=>{c.style.opacity=1;c.style.transform=at(D[i][0],D[i][1],.5)});grp.style.transform='translate(-102px,-62px) rotate(-90deg) scale(.42)';word.style.clipPath='none';tag.style.opacity=1;const t=setTimeout(afterSplash,1300);cleanups.push(()=>clearTimeout(t));return}
+ const k=introSeen()?.42:1,e='cubic-bezier(.65,0,.35,1)',cv=getComputedStyle(document.documentElement);
+ const col=n=>cv.getPropertyValue(n).trim(),from=['--poppy','--nav','--wine','--poppy-soft'].map(col),cosmos=col('--cosmos');
+ /* Four circles drift in, each in a palette colour, breathe once, then merge into the cosmos logo. */
  cs.forEach((c,i)=>{const dx=D[i][0],dy=D[i][1];c.animate([
-  {transform:'translate('+dx*300+'px,'+dy*360+'px) scale(.7)',opacity:0},
-  {transform:'translate('+dx*115+'px,'+dy*88+'px) scale(1)',opacity:1,offset:.38},
-  {transform:'translate('+dx*115+'px,'+dy*88+'px) scale(1)',opacity:1,offset:.48},
-  {transform:'translate('+dx*44+'px,'+dy*41+'px) scale(.5)',opacity:1,offset:.82},
-  {transform:'translate('+dx*44+'px,'+dy*41+'px) scale(.5)',opacity:1}],{duration:2500,delay:i*70,easing:e,fill:'forwards'})});
- grp.animate([{transform:'translate(0,0) rotate(0deg) scale(1)'},{transform:'translate(0,0) rotate(-90deg) scale(1)',offset:.7},{transform:'translate(-102px,-62px) rotate(-90deg) scale(.42)'}],{duration:3500,easing:'cubic-bezier(.32,.72,0,1)',fill:'forwards'});
- word.animate([{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)'}],{duration:1000,delay:3200,easing:'cubic-bezier(.45,0,.2,1)',fill:'forwards'});
- tag.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:800,delay:3800,easing:'cubic-bezier(.32,.72,0,1)',fill:'forwards'});
- const t=setTimeout(afterSplash,5600);cleanups.push(()=>clearTimeout(t))};
+  {transform:'translate('+dx*300+'px,'+dy*360+'px) scale(.7)',opacity:0,backgroundColor:from[i]},
+  {transform:'translate('+dx*115+'px,'+dy*88+'px) scale(1)',opacity:1,backgroundColor:from[i],offset:.38},
+  {transform:'translate('+dx*115+'px,'+dy*88+'px) scale(1.06)',opacity:1,backgroundColor:from[i],offset:.48},
+  {transform:at(dx,dy,.5),opacity:1,backgroundColor:cosmos,offset:.82},
+  {transform:at(dx,dy,.5),opacity:1,backgroundColor:cosmos}],{duration:2500*k,delay:i*70*k,easing:e,fill:'forwards'})});
+ grp.animate([{transform:'translate(0,0) rotate(0deg) scale(1)'},{transform:'translate(0,0) rotate(-90deg) scale(1)',offset:.7},{transform:'translate(-102px,-62px) rotate(-90deg) scale(.42)'}],{duration:3500*k,easing:'cubic-bezier(.32,.72,0,1)',fill:'forwards'});
+ word.animate([{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)'}],{duration:1000*k,delay:3200*k,easing:'cubic-bezier(.45,0,.2,1)',fill:'forwards'});
+ tag.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:800*k,delay:3800*k,easing:'cubic-bezier(.32,.72,0,1)',fill:'forwards'});
+ const t=setTimeout(afterSplash,5600*k);cleanups.push(()=>clearTimeout(t))};
 ACT.skipSplash=()=>afterSplash();
 
 /* ---------- welcome & onboarding ---------- */
 V.welcome=()=>'<section class="welcome"><div class="wl-logo">'+logo(43)+'</div><div class="wl-grid">'+collage().replace('class="collage"','class="collage" aria-hidden="true"')+'<div class="wl-copy"><h1 class="care serif"><span class="hl">Care</span> your mind<br>with <span class="script aw">Aroha</span></h1><button class="btn" data-go="unique">Get started</button><button class="linkbtn" data-go="login">I already have an account</button></div></div></section>';
 V.unique=()=>obShell('<h1 class="h-ob serif">What makes Aroha<br>unique?</h1><ol class="uniq">'+['Personalised self - care','Innovative tools','Expert guidance','Supportive community'].map((t,i)=>'<li style="--i:'+i+'"><sup>0'+(i+1)+'</sup><span>'+t+'</span></li>').join('')+'</ol>','<button class="btn" data-go="login">Next</button>');
-V.login=p=>obShell('<h1 class="h-ob serif">Log in</h1><form id="loginF" data-submit="login" novalidate style="margin-top:16px"><div class="fld"><label for="lem">Email/Phone</label><input class="inp" id="lem" name="email" type="text" autocomplete="username" placeholder="Enter your Email Id/ Phone number"><span class="errt" id="lem-e"></span></div><div class="fld"><label for="lpw">Password</label><input class="inp" id="lpw" name="pw" type="password" autocomplete="current-password" placeholder="Enter your Password"><span class="errt" id="lpw-e"></span></div><button type="submit" class="sr">Log in</button></form><div class="or">OR</div><button class="soc" data-act="social">'+gIcon()+'Sign-up with Google</button><button class="soc" data-act="social"><svg width="16" height="18" viewBox="0 0 16 18" aria-hidden="true"><path fill="currentColor" d="M13.2 9.6c0-2 1.7-3 1.8-3a3.9 3.9 0 0 0-3-1.7c-1.3-.1-2.5.8-3.1.8s-1.7-.8-2.7-.8A4 4 0 0 0 2.8 7c-1.5 2.5-.4 6.3 1 8.4.7 1 1.5 2.1 2.6 2.1s1.4-.7 2.6-.7 1.6.7 2.7.7 1.8-1 2.4-2a8 8 0 0 0 1.1-2.3 3.4 3.4 0 0 1-2-3.6zM11.1 3.4A3.5 3.5 0 0 0 12 .9a3.6 3.6 0 0 0-2.4 1.2 3.4 3.4 0 0 0-.9 2.4 3 3 0 0 0 2.4-1.1z"/></svg>Sign-up with Apple</button><button class="soc" data-act="social"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.4 24v-8.4h2.8l.4-3.3h-3.2v-2c0-.9.3-1.6 1.6-1.6h1.7V5.8a23 23 0 0 0-2.5-.1c-2.5 0-4.2 1.5-4.2 4.3v2.4H7.2v3.3H10V24z"/></svg>Sign-up with Facebook</button><p class="newuser">New user? <button data-go="signup">Sign - up</button></p>','<button class="btn outline" data-act="submitForm" data-f="loginF">Next</button>');
+V.login=p=>obShell('<h1 class="h-ob serif">Log in</h1><form id="loginF" data-submit="login" novalidate style="margin-top:16px"><div class="fld"><label for="lem">Email/Phone</label><input class="inp" id="lem" name="email" type="text" autocomplete="username" placeholder="Enter your Email Id/ Phone number"><span class="errt" id="lem-e"></span></div><div class="fld"><label for="lpw">Password</label><input class="inp" id="lpw" name="pw" type="password" autocomplete="current-password" placeholder="Enter your Password"><span class="errt" id="lpw-e"></span></div><button type="submit" class="sr">Log in</button></form><div class="or">OR</div><button class="soc" data-act="social">'+gIcon()+'Sign-up with Google</button><button class="soc" data-act="social"><svg width="16" height="18" viewBox="0 0 16 18" aria-hidden="true"><path fill="currentColor" d="M13.2 9.6c0-2 1.7-3 1.8-3a3.9 3.9 0 0 0-3-1.7c-1.3-.1-2.5.8-3.1.8s-1.7-.8-2.7-.8A4 4 0 0 0 2.8 7c-1.5 2.5-.4 6.3 1 8.4.7 1 1.5 2.1 2.6 2.1s1.4-.7 2.6-.7 1.6.7 2.7.7 1.8-1 2.4-2a8 8 0 0 0 1.1-2.3 3.4 3.4 0 0 1-2-3.6zM11.1 3.4A3.5 3.5 0 0 0 12 .9a3.6 3.6 0 0 0-2.4 1.2 3.4 3.4 0 0 0-.9 2.4 3 3 0 0 0 2.4-1.1z"/></svg>Sign-up with Apple</button><button class="soc" data-act="social"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.4 24v-8.4h2.8l.4-3.3h-3.2v-2c0-.9.3-1.6 1.6-1.6h1.7V5.8a23 23 0 0 0-2.5-.1c-2.5 0-4.2 1.5-4.2 4.3v2.4H7.2v3.3H10V24z"/></svg>Sign-up with Facebook</button><p class="newuser">New user? <button data-go="signup">Sign - up</button></p><p class="center"><button class="linkbtn" data-act="forgotPw">Forgot password?</button></p>','<button class="btn outline" data-act="submitForm" data-f="loginF">Next</button>');
 function gIcon(){return '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23 12.3c0-.8-.1-1.6-.2-2.3H12v4.4h6.2a5.3 5.3 0 0 1-2.3 3.5v2.9h3.7c2.2-2 3.4-5 3.4-8.5z"/><path fill="#34A853" d="M12 23.5c3.1 0 5.7-1 7.6-2.8l-3.7-2.9a7 7 0 0 1-10.4-3.6H1.7v3A11.5 11.5 0 0 0 12 23.5z"/><path fill="#FBBC05" d="M5.5 14.2a6.9 6.9 0 0 1 0-4.4v-3H1.7a11.5 11.5 0 0 0 0 10.4z"/><path fill="#EA4335" d="M12 5.1c1.7 0 3.2.6 4.4 1.7l3.3-3.3A11.5 11.5 0 0 0 1.7 6.8l3.8 3A6.9 6.9 0 0 1 12 5.1z"/></svg>'}
-V.signup=()=>obShell('<h1 class="h-ob serif">Sign - up</h1><form id="signF" data-submit="signup" novalidate style="margin-top:16px"><div class="fld"><label for="snm">Name</label><input class="inp" id="snm" name="name" autocomplete="name" placeholder="Enter your Name" value="'+esc(S.user.name)+'" data-input="signCheck"><span class="errt" id="snm-e"></span></div><div class="fld"><label for="sem">Email</label><input class="inp" id="sem" name="email" type="email" autocomplete="email" placeholder="Enter your Email" value="'+esc(S.user.email)+'" data-input="signCheck"><span class="errt" id="sem-e"></span></div><div class="fld"><label for="spw">Password</label><input class="inp" id="spw" name="pw" type="password" autocomplete="new-password" placeholder="Create password" data-input="signCheck"><span class="errt" id="spw-e">At least 6 characters</span></div><button type="submit" class="sr">Save</button></form>','<button class="btn outline" id="signBtn" data-act="submitForm" data-f="signF">Save &amp; Next</button>');
+V.signup=()=>obShell('<h1 class="h-ob serif">Sign - up</h1><form id="signF" data-submit="signup" novalidate style="margin-top:16px"><div class="fld"><label for="snm">Name</label><input class="inp" id="snm" name="name" autocomplete="name" placeholder="Enter your Name" value="'+(S.loggedIn?esc(S.user.name):'')+'" data-input="signCheck"><span class="errt" id="snm-e"></span></div><div class="fld"><label for="sem">Email</label><input class="inp" id="sem" name="email" type="email" autocomplete="email" placeholder="Enter your Email" value="'+(S.loggedIn?esc(S.user.email):'')+'" data-input="signCheck"><span class="errt" id="sem-e"></span></div><div class="fld"><label for="spw">Password</label><input class="inp" id="spw" name="pw" type="password" autocomplete="new-password" placeholder="Create password" data-input="signCheck"><span class="errt" id="spw-e">At least 6 characters</span></div><button type="submit" class="sr">Save</button></form>','<button class="btn outline" id="signBtn" data-act="submitForm" data-f="signF">Save &amp; Next</button>');
 A.signup=()=>INP.signCheck();
 INP.signCheck=()=>{const f=$('#signF');if(!f)return;const ok=f.name.value.trim()&&/^\S+@\S+\.\S+$/.test(f.email.value.trim())&&f.pw.value.length>=6;const b=$('#signBtn');b.classList.toggle('outline',!ok)};
 const emailOk=v=>/^\S+@\S+\.\S+$/.test(v)||/^\+?\d[\d\s]{8,}$/.test(v);
 function fieldErr(id,msg){const i=$('#'+id),e=$('#'+id+'-e');if(i)i.classList.toggle('err',!!msg);if(e&&msg)e.textContent=msg;if(e&&!msg&&id!=='spw')e.textContent='';return !msg}
 ACT.submitForm=b=>{const f=$('#'+b.dataset.f);if(f)f.requestSubmit?f.requestSubmit():f.dispatchEvent(new Event('submit',{cancelable:true,bubbles:true}))};
-ACT.login=f=>{const em=f.email.value.trim(),pw=f.pw.value;const a=fieldErr('lem',em?(emailOk(em)?'':'Enter a valid email or phone number'):'Enter your email or phone number');const b=fieldErr('lpw',pw.length>=6?'':'Password must be at least 6 characters');if(!a||!b)return;S.loggedIn=true;S.user.email=em;if(!S.user.name&&em.includes('@')){const n=em.split('@')[0].replace(/[._\d]+/g,' ').trim();S.user.name=n?n[0].toUpperCase()+n.slice(1):''}save();go(S.onboarded?'home':'goal',{},S.onboarded)};
-ACT.signup=f=>{const nm=f.name.value.trim(),em=f.email.value.trim(),pw=f.pw.value;const a=fieldErr('snm',nm?'':'Enter your name');const b=fieldErr('sem',/^\S+@\S+\.\S+$/.test(em)?'':'Enter a valid email');const c=fieldErr('spw',pw.length>=6?'':'Password must be at least 6 characters');if(!(a&&b&&c))return;S.user.name=nm;S.user.email=em;S.loggedIn=true;save();go('goal')};
+/* Local account. Without a server this only stops casual access on a shared device (like the app lock),
+   but it makes Logout mean something: a different email or password no longer reopens someone else's logs. */
+async function pwHash(pw,salt){const te=new TextEncoder(),k=await crypto.subtle.importKey('raw',te.encode(pw),'PBKDF2',false,['deriveBits']);return hex(await crypto.subtle.deriveBits({name:'PBKDF2',salt:te.encode(salt),iterations:150000,hash:'SHA-256'},k,256))}
+const subtleOK=()=>!!(window.crypto&&crypto.subtle);
+async function setAuth(pw){if(!subtleOK())return;const salt=hex(crypto.getRandomValues(new Uint8Array(16)));S.auth={salt:salt,hash:await pwHash(pw,salt)}}
+ACT.login=async f=>{const em=f.email.value.trim(),pw=f.pw.value;const a=fieldErr('lem',em?(emailOk(em)?'':'Enter a valid email or phone number'):'Enter your email or phone number');const b=fieldErr('lpw',pw.length>=6?'':'Password must be at least 6 characters');if(!a||!b)return;
+ if(S.auth&&subtleOK()){if(em.toLowerCase()!==S.user.email.toLowerCase()||await pwHash(pw,S.auth.salt)!==S.auth.hash){fieldErr('lpw','That email and password don\u2019t match the account on this device.');return}}else await setAuth(pw);
+ S.loggedIn=true;S.user.email=em;if(!S.user.name&&em.includes('@')){const n=em.split('@')[0].replace(/[._\d]+/g,' ').trim();S.user.name=n?n[0].toUpperCase()+n.slice(1):''}save();go(S.onboarded?'home':'goal',{},S.onboarded)};
+ACT.signup=async f=>{const nm=f.name.value.trim(),em=f.email.value.trim(),pw=f.pw.value;const a=fieldErr('snm',nm?'':'Enter your name');const b=fieldErr('sem',/^\S+@\S+\.\S+$/.test(em)?'':'Enter a valid email');const c=fieldErr('spw',pw.length>=6?'':'Password must be at least 6 characters');if(!(a&&b&&c))return;if(S.auth&&!S.loggedIn){fieldErr('sem','This device already has an Aroha account. Log in instead, or use Forgot password to start over.');return}await setAuth(pw);S.user.name=nm;S.user.email=em;S.loggedIn=true;save();go('goal')};
+ACT.forgotPw=()=>{if(!S.auth){toast('Nothing is saved on this device yet. Sign up to start.');return go('signup')}if(confirm('Your password only exists on this device, so the only way back in is to delete Aroha\u2019s data here. Delete everything?')){wipe();toast('All data deleted. You can sign up again.')}};
 V.consent=()=>obShell('<h1 class="h-ob b serif">Before we start</h1><p class="sub-ob serif" style="font-size:20px">How Aroha handles what you share</p><ul class="consent"><li>Everything you log stays on this device. Nothing is sent to a server.</li><li>Aroha supports self-care. It is not a medical service and cannot diagnose or treat.</li><li>You can download or delete all your data at any time from Account.</li></ul><label class="check"><input type="checkbox" id="c18"> I am 18 or older</label><label class="check"><input type="checkbox" id="cAgree"> I understand and agree</label><p class="errt" id="cons-e" role="alert"></p>','<button class="btn" data-act="consent">Continue</button>',{noBack:true});
 ACT.consent=()=>{const a=$('#c18').checked,b=$('#cAgree').checked;if(a&&b){S.consentAt=Date.now();save();return go(S.onboarded?'home':'goal',{},true)}
  const h=helpline();$('#cons-e').textContent=!a?'Aroha is for people 18 and over for now.'+(h.num?' If you need support, '+h.name+' is free on '+(h.disp||h.num)+'.':''):'Tick both boxes to continue.'};
@@ -972,7 +1007,7 @@ ACT.mood=b=>{draft.mood=draft.mood===b.dataset.m?'':b.dataset.m;$$('.mood').forE
 ACT.sym=b=>{const s=b.dataset.s,a=draft.symptoms,i=a.indexOf(s);if(i>-1)a.splice(i,1);else a.push(s);b.classList.toggle('on',i===-1);b.setAttribute('aria-pressed',i===-1);chestWarn()};
 INP.symFilter=i=>{const q=i.value.trim().toLowerCase();$$('#symchips .chip').forEach(c=>c.style.display=c.dataset.s.toLowerCase().includes(q)?'':'none')};
 INP.notes=t=>{draft.notes=t.value};
-ACT.saveLog=b=>{const k=b.dataset.d;if(!draft.mood&&!draft.symptoms.length&&!draft.notes.trim()){delete S.logs[k];save();toast('Nothing to save yet. Pick a mood or a symptom.');return}S.logs[k]={mood:draft.mood,symptoms:draft.symptoms,notes:draft.notes.trim(),at:Date.now()};save();toast('Log saved');back()};
+ACT.saveLog=b=>{const k=b.dataset.d;if(!draft.mood&&!draft.symptoms.length&&!draft.notes.trim()){delete S.logs[k];save();toast('Nothing to save yet. Pick a mood or a symptom.');return}S.logs[k]={mood:draft.mood,symptoms:draft.symptoms,notes:draft.notes.trim(),at:Date.now()};save();toast('Log saved');if(!crisisCheck(draft.notes))back()};
 
 /* ---------- heart rate ---------- */
 let hrAbort=false;
@@ -1021,7 +1056,7 @@ ACT.tempSave=b=>{S.temp.push({c:+b.dataset.c,at:Date.now()});save();toast('Tempe
 /* ---------- safe box ---------- */
 function photoInner(ph,big){if(ph.kind==='img')return '<img src="'+ph.src+'" alt="'+esc(ph.title||'Memory photo')+'">';if(ph.kind==='card')return big?'<div class="fullcard">'+esc(ph.text)+'</div>':'<div class="mcard'+(ph.alt?' alt':'')+'">'+esc(ph.text)+'</div>';return art(ph.art)}
 V.safebox=p=>{const tab=p.tab||'photos';const tabs=[['photos','Photos'],['videos','Videos'],['recordings','Recordings'],['playlist','Playlist']];let body='';
- if(tab==='photos')body='<div class="sbgrid"><div class="card sb-new"><h2>New Memories??</h2><button class="btn poppy sm" data-act="pickImg">Upload</button></div><div class="sb-prompt"><h2>Put in a prompt!</h2><p>Write a happy memory and the safe box turns it into a keepsake card you can come back to.</p><form id="gF" data-submit="genMemory"><label class="sr" for="gIn">Memory</label><input class="pinp" id="gIn" name="t" maxlength="160" placeholder="Put in a prompt"></form><div class="center" style="margin-top:22px"><button class="btn poppy sm" data-act="submitForm" data-f="gF">Generate</button></div></div><h2 class="sec" style="margin-bottom:0">Your memories</h2><div class="pgrid">'+S.photos.slice().reverse().map(ph=>'<button class="ptile" data-go="viewer" '+P({id:ph.id})+' aria-label="Open '+esc(ph.title||'memory')+'">'+photoInner(ph)+(ph.kind!=='card'&&ph.title?'<span class="pt">'+esc(ph.title)+'</span>':'')+(S.favs.includes(ph.id)?'<span class="fav">'+I.heartF+'</span>':'')+'</button>').join('')+'</div></div>';
+ if(tab==='photos')body='<div class="sbgrid"><div class="card sb-new"><h2>New Memories??</h2><button class="btn poppy sm" data-act="pickImg">Upload</button></div><div class="sb-prompt"><h2>Put in a prompt!</h2><p>Write a happy memory and the safe box turns it into a keepsake card you can come back to.</p><form id="gF" data-submit="genMemory"><label class="sr" for="gIn">Memory</label><input class="pinp" id="gIn" name="t" maxlength="160" placeholder="Put in a prompt"></form><div class="center" style="margin-top:22px"><button class="btn poppy sm" data-act="submitForm" data-f="gF">Generate</button></div></div><h2 class="sec" style="margin-bottom:0">Your memories</h2>'+(S.photos.length?'':'<p class="empty">Memories you upload or write will show up here.</p>')+'<div class="pgrid">'+S.photos.slice().reverse().map(ph=>'<button class="ptile" data-go="viewer" '+P({id:ph.id})+' aria-label="Open '+esc(ph.title||'memory')+'">'+photoInner(ph)+(ph.kind!=='card'&&ph.title?'<span class="pt">'+esc(ph.title)+'</span>':'')+(S.favs.includes(ph.id)?'<span class="fav">'+I.heartF+'</span>':'')+'</button>').join('')+'</div></div>';
  else if(tab==='videos')body='<div class="sbgrid">'+(videos.length?'<div class="pgrid">'+videos.map(v=>'<video src="'+v.url+'" controls playsinline style="width:100%;border-radius:20px;background:#000"></video>').join('')+'</div>':'<p class="empty">No videos yet. Add a clip that makes you smile.</p>')+'<div class="center"><button class="btn poppy sm" data-act="pickVid">Upload video</button></div><p class="hint">In this prototype videos stay for this session only.</p></div>';
  else if(tab==='recordings')body='<div class="sbgrid"><div class="reclist"><div class="handle"></div><h2>List of recordings</h2><button class="recbtn" id="recBtn" data-act="record">'+I.mic+'<span>Record a voice note</span></button>'+S.recs.map(r=>'<div class="rec"><span class="rth">'+art(r.art||'valley')+'</span><button class="rt" data-go="player" '+P({id:r.id})+'>'+esc(r.title)+(r.sample?' <span class="tag">Sample</span>':'')+'<span class="rd">'+I.clock+mmss(r.dur)+'</span></button><button class="playc" data-go="player" '+P({id:r.id})+' aria-label="Play '+esc(r.title)+'">'+I.play+'</button></div>').join('')+'</div></div>';
  else body='<div class="sbgrid">'+S.playlists.map(pl=>'<div class="plcard"><div class="plcover">'+art(pl.art)+'</div><h3>'+esc(pl.title)+'</h3>'+pl.items.map(id=>S.recs.find(r=>r.id===id)).filter(Boolean).map(r=>'<button class="plrow" data-go="player" '+P({id:r.id})+'><span class="playc">'+I.play+'</span><span>'+esc(r.title)+'</span><b>'+mmss(r.dur)+'</b></button>').join('')+'</div>').join('')+'</div>';
@@ -1030,16 +1065,19 @@ ACT.sbTab=b=>{route.p={tab:b.dataset.t};rerender()};
 ACT.pickImg=()=>$('#fileImg').click();
 ACT.pickVid=()=>$('#fileVid').click();
 function compress(file){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,900/Math.max(im.width,im.height));const c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);res(c.toDataURL('image/jpeg',.8))};im.onerror=rej;im.src=r.result};r.onerror=rej;r.readAsDataURL(file)})}
-$('#fileImg').addEventListener('change',async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;try{const src=await compress(f);S.photos.push({id:uid(),kind:'img',src:src,title:f.name.replace(/\.[^.]+$/,'').slice(0,24)});save();toast('Memory added');if(route.n==='safebox')rerender()}catch(err){toast('That file couldn\u2019t be read as an image. Try a JPG or PNG.')}});
+$('#fileImg').addEventListener('change',async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;try{const src=await compress(f);S.photos.push({id:uid(),kind:'img',src:src,title:f.name.replace(/\.[^.]+$/,'').slice(0,24)});if(!save()){S.photos.pop();save();return toast(FULL)}toast('Memory added');if(route.n==='safebox')rerender()}catch(err){toast('That file couldn\u2019t be read as an image. Try a JPG or PNG.')}});
 $('#fileVid').addEventListener('change',e=>{const f=e.target.files[0];e.target.value='';if(!f)return;try{videos.push({url:URL.createObjectURL(f)});if(route.n==='safebox')rerender()}catch(err){toast('That video couldn\u2019t be opened here.')}});
 ACT.genMemory=f=>{const t=f.t.value.trim();if(t.length<3){fieldErr('gIn','Write a few words about the memory first');toast('Write a few words about the memory first');return}S.photos.push({id:uid(),kind:'card',text:t,alt:S.photos.length%2,title:'Keepsake'});save();toast('Keepsake card added');rerender()};
+/* Media lives in localStorage (about 5 MB). If an item doesn't fit, drop it instead of leaving
+   every later save failing. shortcut: move media to IndexedDB when a backend or sync exists. */
+const FULL='Not enough space on this device for that. Delete a few photos or recordings and try again.',REC_MAX=180;
 let rec=null,recT=null;
 ACT.record=async b=>{if(rec){rec.stop();return}
  if(!navigator.mediaDevices||!window.MediaRecorder){toast('Recording isn\u2019t supported in this browser.');return}
  let st;try{st=await navigator.mediaDevices.getUserMedia({audio:true})}catch(e){toast('Microphone access was blocked. Allow it in your browser settings to record.');return}
- const chunks=[];rec=new MediaRecorder(st);const t0=Date.now();rec.ondataavailable=e=>chunks.push(e.data);
- rec.onstop=()=>{st.getTracks().forEach(t=>t.stop());clearInterval(recT);const dur=Math.max(1,Math.round((Date.now()-t0)/1000));const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'});rec=null;const fr=new FileReader();fr.onload=()=>{const d=new Date();S.recs.unshift({id:uid(),title:'Voice note, '+d.getDate()+' '+MON[d.getMonth()],dur:dur,src:fr.result,art:'valley'});save();toast('Voice note saved');if(route.n==='safebox')rerender()};fr.readAsDataURL(blob)};
- rec.start();b.classList.add('on');b.innerHTML='<span class="dot"></span><span>Stop recording 0:00</span>';recT=setInterval(()=>{const s=$('#recBtn span:last-child');if(s)s.textContent='Stop recording '+mmss((Date.now()-t0)/1000)},500);
+ const chunks=[];try{rec=new MediaRecorder(st,{audioBitsPerSecond:32000})}catch(e){rec=new MediaRecorder(st)}const t0=Date.now();rec.ondataavailable=e=>chunks.push(e.data);
+ rec.onstop=()=>{st.getTracks().forEach(t=>t.stop());clearInterval(recT);const dur=Math.max(1,Math.round((Date.now()-t0)/1000));const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'});rec=null;const fr=new FileReader();fr.onload=()=>{const d=new Date();S.recs.unshift({id:uid(),title:'Voice note, '+d.getDate()+' '+MON[d.getMonth()],dur:dur,src:fr.result,art:'valley'});if(!save()){S.recs.shift();save();return toast(FULL)}toast('Voice note saved');if(route.n==='safebox')rerender()};fr.readAsDataURL(blob)};
+ rec.start();b.classList.add('on');b.innerHTML='<span class="dot"></span><span>Stop recording 0:00</span>';recT=setInterval(()=>{const sec=(Date.now()-t0)/1000;if(sec>=REC_MAX&&rec)return rec.stop();const s=$('#recBtn span:last-child');if(s)s.textContent='Stop recording '+mmss(sec)+' of '+mmss(REC_MAX)},500);
  cleanups.push(()=>{if(rec){rec.stop()}})};
 
 /* viewer */
@@ -1114,7 +1152,7 @@ ACT.comments=b=>openSheet(commentsHTML(b.dataset.id));
 ACT.addComment=f=>{const v=f.t.value.trim();if(!v)return;const id=f.dataset.id;(S.comments[id]=S.comments[id]||[]).push(v);save();sheetBody(commentsHTML(id));if(route.n==='community')rerender()};
 V.chat=p=>{const c=CHATS.find(x=>x.id===p.id)||CHATS[0];const m=S.chats[c.id]||(S.chats[c.id]=[]);
  return shell('community','<div class="chatbox"><div class="row-between" style="justify-content:flex-start;margin-top:10px"><button class="iconbtn" data-act="back" aria-label="Back">'+I.back+'</button><span class="av" style="width:44px;height:44px">'+art(c.art)+'</span><b style="font-weight:500">'+esc(c.name)+'</b></div><div class="msgs" id="msgs">'+m.map(x=>'<p class="msg '+(x.me?'me':'them')+'">'+esc(x.t)+'</p>').join('')+'</div><p class="hint">Prototype chat. Messages stay on this device.</p><form class="sendrow" data-submit="sendMsg" data-id="'+c.id+'"><label class="sr" for="mIn">Message</label><input id="mIn" name="t" maxlength="500" placeholder="Write a message" autocomplete="off"><button aria-label="Send">'+I.send+'</button></form></div>')};
-ACT.sendMsg=f=>{const v=f.t.value.trim();if(!v)return;(S.chats[f.dataset.id]=S.chats[f.dataset.id]||[]).push({me:1,t:v});save();rerender();const n=$('#mIn');if(n)n.focus();window.scrollTo(0,document.body.scrollHeight)};
+ACT.sendMsg=f=>{const v=f.t.value.trim();if(!v)return;(S.chats[f.dataset.id]=S.chats[f.dataset.id]||[]).push({me:1,t:v});save();rerender();window.scrollTo(0,document.body.scrollHeight);if(crisisCheck(v))return;const n=$('#mIn');if(n)n.focus()};
 
 /* ---------- profile ---------- */
 V.profile=()=>shell('home','<div class="prof"><button class="iconbtn" data-act="back" aria-label="Back">'+I.back+'</button><div class="prof-top"><span class="prof-av">'+initials(S.user.name)+'</span><h1>'+esc(S.user.name||'Your profile')+'</h1></div><div class="plist">'+[['editProfile','Edit profile'],['contacts','Emergency info'],['about','About us'],['helpc','Help centre'],['legal','Legal information'],['account','Account']].map(x=>'<button data-go="'+x[0]+'">'+x[1]+I.next+'</button>').join('')+'</div><div style="margin-top:34px" class="center"><button class="btn poppy" data-act="logout">Logout</button></div></div>');
@@ -1143,14 +1181,14 @@ ACT.resetAll=()=>{if(!confirm('Delete all Aroha data on this device? This can\u2
 ACT.logout=()=>{S.loggedIn=false;save();depth=0;go('login',{},true)};
 
 /* export / import */
-const backupJSON=()=>JSON.stringify(Object.assign({},S,{lock:null,exportedAt:new Date().toISOString(),app:'aroha',appVersion:APP_VERSION}),null,1);
+const backupJSON=()=>JSON.stringify(Object.assign({},S,{lock:null,auth:null,exportedAt:new Date().toISOString(),app:'aroha',appVersion:APP_VERSION}),null,1);
 ACT.exportData=()=>{openSheet('<h2>Your data</h2><p class="lead">A copy of everything Aroha stores on this device. Keep it somewhere private: it includes your logs and notes.</p><div class="btnrow" style="margin-bottom:14px"><button class="btn sm" data-act="dlData">'+I.download+'Download file</button><button class="btn outline sm" data-act="copyData">Copy</button></div><label class="sr" for="jsonOut">Backup</label><textarea class="jsonbox" id="jsonOut" readonly></textarea>',sh=>{$('#jsonOut',sh).value=backupJSON()})};
 ACT.dlData=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([backupJSON()],{type:'application/json'}));a.download='aroha-backup-'+dkey()+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);toast('If nothing downloaded, use Copy instead.')};
 ACT.copyData=()=>{const t=$('#jsonOut');(navigator.clipboard?navigator.clipboard.writeText(t.value):Promise.reject()).then(()=>toast('Copied')).catch(()=>{t.select();toast('Select all and copy the text')})};
 ACT.importData=()=>$('#fileJson').click();
 $('#fileJson').addEventListener('change',e=>{const f=e.target.files[0];e.target.value='';if(!f)return;if(f.size>20e6)return toast('That file is too large to be an Aroha backup.');
  const r=new FileReader();r.onload=()=>{let d;try{d=normalise(JSON.parse(r.result))}catch(err){return toast(err instanceof SyntaxError?'That file is not valid JSON.':err.message)}
-  if(!confirm('Replace everything on this device with this backup?'))return;d.loggedIn=true;S=d;carryOver(S);save();applyTheme();locked=false;toast('Backup restored');go('home',{},true)};r.readAsText(f)});
+  if(!confirm('Replace everything on this device with this backup?'))return;d.loggedIn=true;d.user=S.user;d.auth=S.auth;S=d;carryOver(S);save();applyTheme();locked=false;toast('Backup restored');go('home',{},true)};r.readAsText(f)});
 
 /* app lock. shortcut: a 4-digit PIN in browser storage only stops casual access on a shared phone; real protection needs encrypted storage tied to an account. */
 const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
@@ -1202,7 +1240,8 @@ window.Aroha=Object.freeze({version:APP_VERSION,selfTest(){const bad=[],ok=(c,m)
  const n=normalise({v:2,tasks:{'2026-01-01':[{t:'a'},{t:5}]},logs:{'2026-01-01':{mood:'<b>',symptoms:['Sweating','<img>']},x:{}},hr:[{bpm:'<svg>'},{bpm:72}],photos:[{id:'a',kind:'img',src:'javascript:alert(1)'},{id:'b',kind:'img',src:'data:image/png;base64,AA'}],recs:[{id:'r',src:'https://evil'}],tempUnit:'<x>',theme:'<x>',contacts:[{name:'A',phone:'<script>'}],region:'ZZ'});
  ok(n.hr.length===1&&n.hr[0].bpm===72,'hr coerced');ok(n.photos.length===1&&n.photos[0].id==='b','unsafe image dropped');ok(n.recs.length===0,'remote audio dropped');
  ok(Object.keys(n.logs).length===1&&n.logs['2026-01-01'].mood===''&&n.logs['2026-01-01'].symptoms.length===1,'logs cleaned');ok(n.tasks['2026-01-01'].length===1,'tasks cleaned');
- ok(n.tempUnit==='F'&&n.theme===''&&n.region==='','enums whitelisted');ok(n.contacts[0].phone==='','phone validated');
+ ok(n.tempUnit==='F'&&n.theme===''&&n.region==='','enums whitelisted');ok(normalise({v:2,auth:{salt:'x',hash:'<b>'}}).auth===null,'auth validated');
+ ok(CRISIS.test('I don\u2019t want to live')&&!CRISIS.test('I killed it at my exam'),'crisis words');ok(n.contacts[0].phone==='','phone validated');
  const syn=[];for(let t=0;t<15000;t+=33)syn.push({t:t,r:150+3*Math.sin(2*Math.PI*1.2*t/1000),g:40});const b=bpmFrom(syn);ok(b.bpm>=68&&b.bpm<=76,'72 bpm synthetic, got '+b.bpm);
  ok(bpmFrom(syn.map(x=>({t:x.t,r:40,g:60}))).msg,'uncovered camera rejected');
  return bad.length?bad:'ok'}});

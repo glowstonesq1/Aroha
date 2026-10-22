@@ -1,0 +1,17 @@
+# Aroha
+
+> Aroha is a self-care web app for young adults living with generalised anxiety. It is a companion, not a medical service, and it does not diagnose or treat.
+
+## What it does
+- Log mood and anxiety symptoms, with a weekly summary of patterns (no streaks)
+- Estimate heart rate with the phone camera; log temperature from a thermometer
+- SOS sheet: guided breathing, 5-4-3-2-1 grounding, one-tap messages to trusted contacts, and region-aware crisis helplines
+- Safe box for happy memories, photos and voice notes
+- To-dos that break tasks into small steps
+- Short reads on anxiety, self-compassion and grounding
+
+## Privacy
+All data stays in the user's browser on their device. There is no server and no tracking. Users can download or delete their data at any time.
+
+## Audience
+Adults aged 18 and over.
